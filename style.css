@@ -12,3 +12,11 @@
 #blacksite-audio-controls input{width:65px;accent-color:#e6a457}
 #blacksite-audio-controls button:focus-visible,#blacksite-audio-controls select:focus-visible{outline:2px solid #ffe4a8}
 @media(max-width:700px){#blacksite-audio-controls{top:28px;right:5px;max-width:90%}#blacksite-audio-controls button,#blacksite-audio-controls select{font-size:9px;padding:5px}.blacksite-brand-logo{width:19px;height:19px;min-width:19px;max-width:19px;min-height:19px;max-height:19px}}
+
+/* Fixed Celestial-style branding proportions: never enlarge or reflow game text. */
+#top .brand{display:inline-flex;align-items:center;gap:6px;min-width:0;line-height:1.15;white-space:nowrap}
+#top .brand .blacksite-brand-logo{display:block!important;box-sizing:border-box!important;flex:0 0 20px!important;width:20px!important;height:20px!important;min-width:20px!important;max-width:20px!important;min-height:20px!important;max-height:20px!important;margin:0!important;object-fit:contain!important;position:static!important}
+#menu h1 .blacksite-title-logo{display:inline-block!important;box-sizing:border-box!important;width:0.52em!important;height:0.52em!important;min-width:0!important;min-height:0!important;max-width:32px!important;max-height:32px!important;object-fit:contain!important;vertical-align:0!important;margin:0 0.12em 0 0!important;position:static!important}
+.panel h2 .blacksite-panel-logo{display:inline-block!important;box-sizing:border-box!important;width:20px!important;height:20px!important;min-width:20px!important;max-width:20px!important;min-height:20px!important;max-height:20px!important;object-fit:contain!important;vertical-align:middle!important;margin:0 7px 0 0!important;position:static!important}
+/* Hover remains a visual-only effect: no dimensions, margins, or layout changes. */
+@media(max-width:700px){#top .brand{gap:4px}#top .brand .blacksite-brand-logo{flex-basis:16px!important;width:16px!important;height:16px!important;min-width:16px!important;max-width:16px!important;min-height:16px!important;max-height:16px!important}#menu h1 .blacksite-title-logo{max-width:25px!important;max-height:25px!important}.panel h2 .blacksite-panel-logo{width:18px!important;height:18px!important;min-width:18px!important;max-width:18px!important;min-height:18px!important;max-height:18px!important}}
